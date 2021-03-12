@@ -1,0 +1,188 @@
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <title> Mensajes encriptados</title>
+
+    </head>
+    <body class = body1>
+        <div id = "container" style="position: relative;">
+            <h1>Mensajes encriptados</h1>
+            <div class="#btn-menu" style="float: left; line-height: 30px; color: white; font-size: 100px;">
+                <label for="btn-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" cursor="pointer" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </label>
+
+            </div>
+
+            <div style="text-align: center;">
+                <h2>Personajes importantes de la encriptación</h2>
+                <h3>
+                    Personajes que usaron la encriptación a lo largo de los años.
+                </h3>
+            </div>
+            <div class="container" id="carousel">
+                <div class= "row">
+                    <div class= "col-2"></div>
+                    <div class= "col-8">
+                        <div id="carouselcharacters" class="carousel carousel-dark slide" data-bs-ride="carousel" style="width: 683px; height: 323px;">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselcharacters" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselcharacters" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselcharacters" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" id="juliocesar">
+                                    <img src="img/Homepage/juliocesar.jpg" width="683px" height="323px" class="d-block w-100" >
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Julio César</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" id="napoleonbonaparte" >
+                                    <img src="img/Homepage/napoleon.jpg" width="683px" height="323px" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Napoleón Bonaparte</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" id="alanturing">
+                                    <img src="img/Homepage/alanturing.jpg" width="683px" height="323px" class="d-block w-100" >
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Alan Turing</h4>
+                                    </div>
+                                </div>
+                            </div >
+
+                            <button class="carousel-control-prev"    type="button" data-bs-target="#carouselcharacters"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next"  type="button" data-bs-target="#carouselcharacters"
+                            data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden" >Next</span>
+                            </button>
+                        </div>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert" style="width: 683px; background-color: aqua; border-color: aqua; color:blue;">
+                        <strong>Apreta la imagen</strong> para saber mas sobre estos personajes
+                    </div>
+                    <div class= "col-1"></div>
+            </div>
+
+
+            <br><br>
+        </div>
+        <div class="container">
+            <div id="cesar">
+                 <h5>(c.100-44 a. C.)</h5>
+                 <div style="position:absolute; left: 158px;">
+                    <p> Julio César fue un general y estadista romano que jugó un papel fundamental en el surgimiento del imperio romano. </p>
+                    <p> César se convirtió en uno de los políticos más poderosos de la República Romana a través de una serie de victorias militares en las Galias </p>
+                    <p> Guerras, completadas hacia el 51 a. C., que extendieron enormemente el territorio romano. Es en el contexto militar que César utilizó textos cifrados. Él creó </p>
+                    <p> lo que conocemos hoy como cifrado Cesar. Hoy en día, este tipo de cifrado es uno de los tipos de cifrado más simples y conocidos. En esta sustitución </p>
+                    <p> cifrar cada letra en el texto sin formato se reemplaza por una letra en un número fijo de posiciones en el alfabeto. <a href = "https://tomasp92.github.io/Proyectos-porfolio/cesar">Más sobre César</a></p>
+                </div>
+            </div>
+            <div id="napoleon">
+                <h5>(15 August 1769 – 5 May 1821)</h5>
+                <div style="position:absolute; left: 158px;">
+                    <p> Napoleón Bonaparte fue un líder político y militar francés. Emperador de Francia desde 1804 hasta 1814, y nuevamente en 1815. </p>
+                    <p> Dominó los asuntos europeos y mundiales durante más de una década. Liderando a Francia contra una serie de coaliciones en las Guerras Napoleónicas. </p>
+                    <p> Ganó la mayoría de estas guerras y la gran mayoría de sus batallas. </p>
+                    <p> En la Guerra de Independencia de España (1808-1814), se envió información sobre los movimientos y tácticas del enemigo. Criptógrafos británicos </p>
+                    <p> con frecuencia capturaban mensajes de los franceses y no estaban encriptados. Pero Napoleón aprendió su lección y comenzó a usar un criptográfico </p>
+                </div>
+
+
+                <div class="container" style="position: relative; top:200px;">
+                    <div style="position:absolute; left: 30px; top:0px; width:50%;">
+                        <p> código con 150 números, pero este también fue descifrado rápidamente por el enemigo. Entonces, el ejército francés creó "Le Grande Chiffre de Paris" </p>
+                        <p> Constaba de unos 1400 números. En este código, una sola letra tendría varios números según la frecuencia con la que estuviera en la letra, </p>
+                        <p> este método se conoce como sustitución homofónica. Para hacerlo aún más complicado, algunos números fueron inútiles; o simplemente se incluyeron en el texto cifrado para confundir </p>
+                        <p> Sin embargo, este método fue fácilmente descifrado, no por su estructura sino por su uso. Los soldados franceses no cifraron toda la letra, solo </p>
+                        <p> algunas partes y esto lo hizo muy fácil para un criptógrafo. <a href = "https://tomasp92.github.io/Proyectos-porfolio/napoleon">Más sobre Napoleón</a></p>
+                    </div>
+                    <div style="position:absolute; left: 600px; top:0px;">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/Homepage/chiffreparis.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Le Grande Chiffre de Paris</h5>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+            <div id="turing">
+                <h5>(23 de Junio 1912 – 7 Junio 1954)</h5>
+                <div class="container" style="position:relative;">
+                        <div style="position:absolute; left: 30px; top:0px; width:50%;">
+                            <p> Alan Turing fue un matemático, biólogo teórico, filósofo, lógico, informático y criptoanalista inglés. </p>
+                            <p> Durante la Segunda Guerra Mundial, Turing trabajó para Government Code and Cypher School (GC&CS) en Bletchley Park, el centro de descifrado de códigos de Gran Bretaña que produjo Ultra inteligencia. </p>
+                            <p> Aquí diseñó algunas técnicas para acelerar el descifrado de mensajes alemanes. Esto ayudó a los aliados a derrotar a los nazis en una serie de batallas fundamentales </p>
+                        </div>
+                        <div style="position:absolute; left: 600px; top:0px;">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/Homepage/enigma.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maquina Enigma</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div style= "position: relative; left: 30px; top:250px; width: 100%;">
+                    <p> Durante la guerra inventó una máquina llamada bombe que podía descifrar mensajes "enigma" de forma masiva.
+                        <a href = "https://tomasp92.github.io/Proyectos-porfolio/turing">Mas Sobre Turing</a></p>
+                </div>
+                <div class="card" style="width: 18rem; position:relative; left: 30px; top: 270px;">
+                    <img src="img/Homepage/bombe.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Bombe machine</h5>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav class="nav-menu">
+                    <a href = "https://tomasp92.github.io/Proyectos-porfolio">Pagina Principal</a>
+                    <a href = "https://tomasp92.github.io/Proyectos-porfolio/Homepage2">Videos</a>
+                    <a href = "https://tomasp92.github.io/Proyectos-porfolio/Homepage3">Encripta tus propios mensajes</a>
+                    <a href = "https://tomasp92.github.io/Proyectos-porfolio/Homepage4">Decodifica mensajes</a>
+                    <a href = "https://tomasp92.github.io/Proyectos-porfolio/Homepage5">Funciones Hash</a>
+                    <a href = "https://tomasp92.github.io/Proyectos-porfolio/Homepage6">Block Chain</a>
+                    <a href = "https://tomasp92.github.io/Proyectos-porfolio/Homepage7">Personajes importantes de la encriptación</a>
+                    <a href = "https://tomasp92.github.io/">Volver a portfolio</a>  
+                </nav>
+                <label for="btn-menu" class="icon-equis">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+         <script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        <script src="Homepage7.js"></script>
+
+    </body>
+</html>
