@@ -1,3 +1,7 @@
+function googleTranlateElementinit() {
+    new google.translate.TranslateElement({pageLanguage:'es', layout:google.translate.TranslateElement.InlineLayout.SIMPLE},
+    'google_translate_element');
+}
 document.addEventListener('DOMContentLoaded', function() {
   // Use buttons to toggle between views
   document.querySelector('#napoleonbonaparte').addEventListener('click', () => load_view('napoleon'));
