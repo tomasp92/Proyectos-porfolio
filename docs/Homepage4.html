@@ -38,15 +38,19 @@
             <form>
                 <input id = "clave" type = "text"  placeholder = "Escribe aquí la clave recibida en mayusculas" maxlenght="26"> </textarea>
             </form>
-            <form>
-                <input id = "textoaencriptar" type = "textarea"  placeholder = "Escribe aquí el texto a decodificar"> </textarea>
-            </form>
             <div>
-                <p id = "textoencriptado">
-                </p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <form>
+                    <input id = "textoaencriptar1" type = "textarea"  placeholder = "Escribe aquí el texto a decodificar"> </textarea>
+                </form>
+                <div>
+                    <p id = "textoencriptado1">
+                    </p>
+                </div>
             </div>
-            <button id ="decodificartexto" onclick="getData()"> Decodificar texto </button>
+            <div>
+                <button id ="decodificartexto" onclick="getData()"> Decodificar texto </button>
+            </div>
+            
         </div>
         <input type="checkbox" id="btn-menu3">
         <div class="container-menu">
@@ -109,6 +113,7 @@
 
 
         }
+        </script>
         <script src="Homepage7.js"></script>
             <script type= "text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranlateElementinit"> </script>
          </script>

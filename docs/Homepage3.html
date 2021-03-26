@@ -17,7 +17,6 @@
                     <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
             </label>
-           
         </div>
         <h1>
             Encripta tus mensajes
@@ -70,7 +69,7 @@
             </p>
             <br><br>
         </div>
-        <div>
+        <div #textos>
             <div style="height: 300px;">
                 <form>
                     <input id = "textoaencriptar" type = "textarea"  placeholder = "Escribe aquí el texto a encriptar"> </textarea>
@@ -85,9 +84,6 @@
             <div style="height: 200px; position: relative;">
                 <button id ="encriptartexto" onclick="getData()"> Encriptar texto </button>
             </div>
-            
-            
-
         </div>
         <input type="checkbox" id="btn-menu2">
         <div class="container-menu" style="height: 300%;">
@@ -109,8 +105,7 @@
                 </label>
             </div>
         </div>
-         <script>
-
+        <script>
             let n = 0;
 
             let buttons = ['#A', '#B', '#C', '#D', '#E', '#F', '#G', '#H', '#I', '#J', '#K', '#L', '#M', '#N', '#O', '#P', '#Q', '#R', '#S', '#T', '#U', '#V', '#W', '#X', '#Y','#Z']
@@ -129,38 +124,39 @@
                 }
 
 
-        // Check out how long the plain text is
+            // Check out how long the plain text is
 
-        let getData = function(){
-            let = textoaencriptar = document.getElementById('textoaencriptar').value;
+            let getData = function(){
+                let = textoaencriptar = document.getElementById('textoaencriptar').value;
 
-            document.getElementById('textoencriptado').innerHTML = "Texto cifrado: ";
+                document.getElementById('textoencriptado').innerHTML = "Texto cifrado: ";
 
-            // Print the ciphertext
-            for (let p = 0; p < textoaencriptar.length ; p++)
-            {
-                console.log (textoaencriptar[p]);
-                //print the upper case letters modified
-                if (textoaencriptar.charCodeAt(p) >= 65 && textoaencriptar.charCodeAt(p) <= 90)
+                // Print the ciphertext
+                for (let p = 0; p < textoaencriptar.length ; p++)
                 {
-                    let k = textoaencriptar.charCodeAt(p) - 65;
-                    document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + key [k];
+                    console.log (textoaencriptar[p]);
+                    //print the upper case letters modified
+                    if (textoaencriptar.charCodeAt(p) >= 65 && textoaencriptar.charCodeAt(p) <= 90)
+                    {
+                        let k = textoaencriptar.charCodeAt(p) - 65;
+                        document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + key [k];
+                    }
+                    //print the lower case letters modified
+                    else if (textoaencriptar.charCodeAt(p) >= 97 && textoaencriptar.charCodeAt(p) <= 122)
+                    {
+                        let k = textoaencriptar.charCodeAt(p) - 97;
+                        document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + key[k].toLowerCase();
+                    }
+                    //print other type of characters
+                    else
+                    {
+                        document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + textoaencriptar[p];
+                    }
                 }
-                //print the lower case letters modified
-                else if (textoaencriptar.charCodeAt(p) >= 97 && textoaencriptar.charCodeAt(p) <= 122)
-                {
-                    let k = textoaencriptar.charCodeAt(p) - 97;
-                    document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + key[k].toLowerCase();
-                }
-                //print other type of characters
-                else
-                {
-                    document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + textoaencriptar[p];
-                }
+                document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + "<br>" + "Clave: " + key.join('');
+
             }
-            document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + "<br>" + "Clave: " + key.join('');
-
-        }
+        </script>
         <script src="Homepage7.js"></script>
         <script type= "text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranlateElementinit"> </script>
         </script>
