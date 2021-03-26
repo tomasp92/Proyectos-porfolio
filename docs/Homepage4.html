@@ -17,7 +17,7 @@
     </div>
 
 
-     <body class = body1>
+    <body class = body1>
         <div id="translate">
             <div>Translate Website:</div>
             <div id="google_translate_element"></div>
@@ -75,39 +75,39 @@
 
         <script>
             let getData = function(){
-            let = textoaencriptar = document.getElementById('textoaencriptar').value;
+            let = textoaencriptar1 = document.getElementById('textoaencriptar1').value;
 
             let = key = document.getElementById('clave').value;
 
             // Print the ciphertext
-            for (let p = 0; p < textoaencriptar.length ; p++)
+            for (let p = 0; p < textoaencriptar1.length ; p++)
             {
                 //print the upper case letters modified
-                if (textoaencriptar.charCodeAt(p) >= 65 && textoaencriptar.charCodeAt(p) <= 90)
+                if (textoaencriptar1.charCodeAt(p) >= 65 && textoaencriptar1.charCodeAt(p) <= 90)
                 {
                     for(let m = 0; m < key.length; m++)
                     {
-                        if(textoaencriptar[p] === key[m])
+                        if(textoaencriptar1[p] === key[m])
                         {
-                            document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + String.fromCharCode(m + 65);
+                            document.getElementById('textoencriptado1').innerHTML = document.getElementById('textoencriptado1').innerHTML + String.fromCharCode(m + 65);
                         }
                     }
                 }
                 //print the lower case letters modified
-                else if (textoaencriptar.charCodeAt(p) >= 97 && textoaencriptar.charCodeAt(p) <= 122)
+                else if (textoaencriptar1.charCodeAt(p) >= 97 && textoaencriptar1.charCodeAt(p) <= 122)
                 {
                      for(let m = 0; m < key.length; m++)
                     {
-                        if(textoaencriptar[p].toUpperCase() === key[m])
+                        if(textoaencriptar1[p].toUpperCase() === key[m])
                         {
-                            document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + String.fromCharCode(m + 97);
+                            document.getElementById('textoencriptado1').innerHTML = document.getElementById('textoencriptado1').innerHTML + String.fromCharCode(m + 97);
                         }
                     }
                 }
                 //print other type of characters
                 else
                 {
-                    document.getElementById('textoencriptado').innerHTML = document.getElementById('textoencriptado').innerHTML + textoaencriptar[p];
+                    document.getElementById('textoencriptado1').innerHTML = document.getElementById('textoencriptado1').innerHTML + textoaencriptar1[p];
                 }
             }
 
@@ -121,5 +121,5 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 
-        </body>
+    </body>
 </html>
